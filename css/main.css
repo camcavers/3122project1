@@ -56,11 +56,72 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*
+ * Main Nav Menu Styling
+ */
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  margin-bottom: 2px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: red;
+}
+
+.main-nav a {
+  background-color: orange;
+  display: block;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+
+.main-nav a:active {
+  background-color: grey;
+}
 
 
+/*
+ * Main Content Section Styling
+ */
+
+.content {
+  padding: 32px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: red;
+}
+
+.google-map {
+  width: 100%;
+  height: 66.7vh;
+}
 
 
+/*
+ * Footer Styling
+ */
 
+.extra-info {
+  background-color: #777;
+  padding: 32px;
+  color: white;
+}
 
 
 
@@ -74,9 +135,36 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+ @media screen and (min-width: 600px) {
+   .main-nav {
+     background-color: orange;
+     border-bottom: 1px solid red;
+   }
 
-}
+   .main-nav li {
+     display: inline-block;
+     border-bottom: none;
+   }
+
+   .main-nav a {
+     background-color: transparent;
+   }
+
+   .main-nav a:hover {
+     background-color: red;
+   }
+
+   .main-nav a:hover:active {
+     background-color: grey;
+   }
+ }
+
+ @media screen and (min-width: 1024px) {
+   .main-nav {
+     font-size: 125%;
+   }
+ }
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
