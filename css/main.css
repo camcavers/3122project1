@@ -60,6 +60,18 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+.brand {
+  padding: 16px;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  max-width: 300px;
+}
+
+.brand img {
+  width: 100%;
+}
+
 /*
  * Main Nav Menu Styling
  */
